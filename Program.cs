@@ -1,13 +1,13 @@
-﻿// Задача: Написать программу, которая из имеющегося массива строк формирует новый массив
+﻿//  Задача: Написать программу, которая из имеющегося массива строк формирует новый массив
 // из строк, длина которых меньше, либо равна 3 символам.
 // Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма.
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
-// Примеры:
-// [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
-// [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
-// [“Russia”, “Denmark”, “Kazan”] → []
+//  Примеры:
+//   [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
+//   [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
+//   [“Russia”, “Denmark”, “Kazan”] → []
 
-string[] array1 = new string[7] {"109","914540","Deutschland","SQL","88007006841","48","Hi!"};
+string[] array1 = new string[7] {"103","914540","Deutschland","SQL","88007006841","48","Hi!"};
 string[] array2 = new string[array1.Length];
 void NewArrayThree(string[] array1, string[] array2)
 {
@@ -24,13 +24,12 @@ void NewArrayThree(string[] array1, string[] array2)
 
 void PrintArray(string[] array)
 {
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"\"{array[i]}\", ");
-    }
-    Console.WriteLine();
+   for (int i = 0; i < array.Length; i++)
+   {
+       Console.Write($"\"{array[i]}\", ");
+   }
+   Console.WriteLine();
 }
 
 NewArrayThree(array1, array2);
 PrintArray(array2);
-
